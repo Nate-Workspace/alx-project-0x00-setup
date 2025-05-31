@@ -1,8 +1,36 @@
+import Button from "@/components/Button"
 import Card from "@/components/Card"
 
 const Landing: React.FC =  () => {
   return (
+    <div>
     <Card />
+    <div className="p-8 space-y-4">
+      <h1 className="text-2xl font-bold">Landing Page</h1>
+
+      <div className="space-y-2">
+        <h2 className="text-lg font-semibold">Small Buttons</h2>
+        <Button title="Small - rounded-sm" className="text-sm rounded-sm" />
+        <Button title="Small - rounded-md" className="text-sm rounded-md" />
+        <Button title="Small - rounded-full" className="text-sm rounded-full" />
+      </div>
+
+      <div className="space-y-2">
+        <h2 className="text-lg font-semibold">Medium Buttons</h2>
+        <Button title="Medium - rounded-sm" className="text-base rounded-sm" />
+        <Button title="Medium - rounded-md" className="text-base rounded-md" />
+        <Button title="Medium - rounded-full" className="text-base rounded-full" />
+      </div>
+
+      <div className="space-y-2">
+        <h2 className="text-lg font-semibold">Large Buttons</h2>
+        <Button title="Large - rounded-sm" className="text-lg px-6 py-3 rounded-sm" />
+        <Button title="Large - rounded-md" className="text-lg px-6 py-3 rounded-md" />
+        <Button title="Large - rounded-full" className="text-lg px-6 py-3 rounded-full" />
+      </div>
+    </div>
+
+    </div>
   )
 }
 export default Landing
