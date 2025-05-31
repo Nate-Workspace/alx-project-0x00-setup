@@ -2,9 +2,7 @@ import Card from "@/components/Card"
 
 const Landing: React.FC =  () => {
   return (
-    <div>
-      <Card/>
-    </div>
+    <Card/>
   )
 }
 export default Landing
